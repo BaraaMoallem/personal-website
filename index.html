@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baraa Al Moalem | Cybersecurity Professional</title>
+    <meta name="description" content="Baraa Al Moalem - Cybersecurity student & SOC Analyst. Specializing in Security Operations, SIEM, and Network Security.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Animated background -->
+    <div class="cyber-bg">
+        <canvas id="matrix-canvas"></canvas>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>B<span class="logo-dot">.</span>M<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="#contact" class="nav-cta">Hire Me</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <p class="hero-greeting">
+                    <span class="typing-prefix">$</span> <span class="typing-text" id="typing-text"></span><span class="cursor">|</span>
+                </p>
+                <h1 class="hero-name">
+                    Baraa <span class="text-accent">Al Moalem</span>
+                </h1>
+                <h2 class="hero-title">
+                    <span class="title-rotate" id="title-rotate">SOC Analyst</span>
+                </h2>
+                <p class="hero-desc">
+                    Cybersecurity student specializing in <strong>Security Operations</strong>, <strong>SIEM Solutions</strong>, and <strong>Network Security</strong>. Passionate about defending digital infrastructure and hunting threats.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Get in Touch
+                    </a>
+                    <a href="V1.61_Baraa_Resume.pdf" class="btn btn-outline" target="_blank">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/in/probaroa/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/BaraaMoallem" target="_blank" rel="noopener" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:baraamoallem5@gmail.com" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="shield-container">
+                    <div class="shield-ring ring-1"></div>
+                    <div class="shield-ring ring-2"></div>
+                    <div class="shield-ring ring-3"></div>
+                    <div class="shield-icon">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>Scroll Down</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">01.</span> About Me
+            </h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        I'm a <strong>fourth-year Cybersecurity student</strong> at the Arab Open University with a passion for defending digital infrastructure. My journey into cybersecurity started with a strong foundation in computer science — earning my <strong>CS50 certification from Harvard</strong> — and has evolved into a specialization in <strong>Security Operations Center (SOC)</strong> work.
+                    </p>
+                    <p>
+                        I recently completed a <strong>6-month Blue Team (SOC Analyst) Diploma</strong> at Telecom Egypt (WE), where I gained hands-on experience with <strong>QRadar SIEM</strong>, incident response, and threat analysis. I've also passed the <strong>ISC2 Certified in Cybersecurity (CC)</strong> exam and self-studied the <strong>CCNA</strong> curriculum.
+                    </p>
+                    <p>
+                        Beyond the technical realm, I'm the <strong>President of Alkalemah Toastmasters Club</strong> — Egypt's first Arabic Toastmasters club — where I've honed my leadership, public speaking, and communication skills. I believe that effective communication is just as critical as technical expertise in cybersecurity.
+                    </p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-certificate"></i></div>
+                        <div class="stat-number" data-count="8">0</div>
+                        <div class="stat-label">Certifications</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-project-diagram"></i></div>
+                        <div class="stat-number" data-count="4">0</div>
+                        <div class="stat-label">Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-clock"></i></div>
+                        <div class="stat-number" data-count="6">0</div>
+                        <div class="stat-label">Months SOC Training</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+                        <div class="stat-number" data-count="1">0</div>
+                        <div class="stat-label">Contest Win (Area Level)</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-alt" id="skills">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">02.</span> Skills & Arsenal
+            </h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-shield-virus"></i>
+                        <h3>Cybersecurity</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">SOC Operations</span>
+                        <span class="skill-tag">SIEM (QRadar)</span>
+                        <span class="skill-tag">SIEM (Splunk)</span>
+                        <span class="skill-tag">Ethical Hacking</span>
+                        <span class="skill-tag">Network Scanning</span>
+                        <span class="skill-tag">SQL Injection</span>
+                        <span class="skill-tag">XSS Injection</span>
+                        <span class="skill-tag">Nmap</span>
+                        <span class="skill-tag">ARP Spoofing</span>
+                        <span class="skill-tag">Wireshark</span>
+                        <span class="skill-tag">Active Directory</span>
+                        <span class="skill-tag">Incident Response</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>Networking</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Cisco Networking</span>
+                        <span class="skill-tag">CCNA</span>
+                        <span class="skill-tag">VPN</span>
+                        <span class="skill-tag">OSPF</span>
+                        <span class="skill-tag">VLANs</span>
+                        <span class="skill-tag">Inter-VLAN Routing</span>
+                        <span class="skill-tag">DHCP</span>
+                        <span class="skill-tag">Packet Tracer</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">Flask</span>
+                        <span class="skill-tag">SQLite3</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-server"></i>
+                        <h3>Systems</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Linux</span>
+                        <span class="skill-tag">Windows Server</span>
+                        <span class="skill-tag">MCSA</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-globe"></i>
+                        <h3>Web Development</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML5</span>
+                        <span class="skill-tag">CSS3</span>
+                        <span class="skill-tag">Bootstrap</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-header">
+                        <i class="fas fa-comments"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Leadership</span>
+                        <span class="skill-tag">Public Speaking</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Team Management</span>
+                        <span class="skill-tag">English (B2)</span>
+                        <span class="skill-tag">Arabic (Native)</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section" id="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">03.</span> Experience
+            </h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>SOC Analyst Trainee</h3>
+                            <span class="timeline-company">Telecom Egypt - WE</span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> January 2026 — July 2026
+                        </span>
+                        <ul class="timeline-details">
+                            <li>Completed a 6-month intensive Blue Team (SOC Analyst) diploma program</li>
+                            <li>Gained hands-on experience with QRadar SIEM solution implementation</li>
+                            <li>Performed security monitoring, incident detection, and threat analysis</li>
+                            <li>Worked with real-world security operations center workflows</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>QRadar</span>
+                            <span>SIEM</span>
+                            <span>Incident Response</span>
+                            <span>Blue Team</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>President</h3>
+                            <span class="timeline-company">Alkalemah Toastmasters Club</span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> July 2026 — Present
+                        </span>
+                        <ul class="timeline-details">
+                            <li>Leading Egypt's first Arabic Toastmasters club</li>
+                            <li>Managing club operations, meetings, and member development</li>
+                            <li>Won 1st place in the Humorous Speeches contest at Area level</li>
+                            <li>Previously served as XCOM Committee Member (Mar–Jul 2026)</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Leadership</span>
+                            <span>Public Speaking</span>
+                            <span>Team Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Technical Team Co-Head</h3>
+                            <span class="timeline-company">Huawei Telecommunications Student Club - AOU</span>
+                        </div>
+                        <span class="timeline-date">
+                            <i class="far fa-calendar-alt"></i> February 2025 — January 2026
+                        </span>
+                        <ul class="timeline-details">
+                            <li>Co-led the technical team for Huawei's student club at AOU</li>
+                            <li>Organized technical workshops and learning sessions</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>Technical Leadership</span>
+                            <span>Networking</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="section section-alt" id="certifications">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">04.</span> Certifications
+            </h2>
+            <div class="certs-grid">
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <h3>Certified in Cybersecurity (CC)</h3>
+                    <p class="cert-issuer">ISC2</p>
+                    <p class="cert-detail">Passed the official exam</p>
+                    <span class="cert-status verified"><i class="fas fa-check-circle"></i> Verified</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Blue Team SOC Analyst Diploma</h3>
+                    <p class="cert-issuer">Telecom Egypt - WE</p>
+                    <p class="cert-detail">6-month intensive training program</p>
+                    <span class="cert-status verified"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>CCNA (Part 1 & 2)</h3>
+                    <p class="cert-issuer">Cisco NetAcad</p>
+                    <p class="cert-detail">Introduction to Networks & Switching, Routing, and Wireless Essentials</p>
+                    <span class="cert-status verified"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>CS50 Introduction to Computer Science</h3>
+                    <p class="cert-issuer">Harvard / edX</p>
+                    <p class="cert-detail">Verified certificate with final project</p>
+                    <span class="cert-status verified"><i class="fas fa-check-circle"></i> Certified</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>CS50 Cybersecurity</h3>
+                    <p class="cert-issuer">Harvard</p>
+                    <p class="cert-detail">Specialized cybersecurity course</p>
+                    <span class="cert-status verified"><i class="fas fa-check-circle"></i> Certified</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-bug"></i>
+                    </div>
+                    <h3>Pre Security Learning Path</h3>
+                    <p class="cert-issuer">TryHackMe</p>
+                    <p class="cert-detail">Foundational security pathway</p>
+                    <span class="cert-status verified"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Computer Network Fundamentals</h3>
+                    <p class="cert-issuer">Mahara Tech</p>
+                    <p class="cert-detail">Networking foundations</p>
+                    <span class="cert-status verified"><i class="fas fa-check-circle"></i> Completed</span>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-badge">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>English Level B1</h3>
+                    <p class="cert-issuer">The American University</p>
+                    <p class="cert-detail">Grade A — Now at B2 level</p>
+                    <span class="cert-status verified"><i class="fas fa-check-circle"></i> Grade A</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">05.</span> Projects
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-desktop"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/BaraaMoallem" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>QRadar SIEM Implementation</h3>
+                    <p>Implemented and configured IBM QRadar SIEM solution during Telecom Egypt training. Set up log sources, correlation rules, and custom dashboards for real-time security monitoring.</p>
+                    <div class="project-tech">
+                        <span>QRadar</span>
+                        <span>SIEM</span>
+                        <span>Log Analysis</span>
+                        <span>Blue Team</span>
+                    </div>
+                </div>
+                <div class="project-card featured">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-network-wired"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/BaraaMoallem" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Multi-Branch Secure Network</h3>
+                    <p>Designed a multi-branch network simulation in Cisco Packet Tracer featuring OSPF routing, Site-to-Site VPN, Inter-VLAN routing, and centralized DHCP/TFTP services.</p>
+                    <div class="project-tech">
+                        <span>Packet Tracer</span>
+                        <span>OSPF</span>
+                        <span>VPN</span>
+                        <span>VLANs</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-globe"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/BaraaMoallem" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Alkalemah TMC Website</h3>
+                    <p>Built a fully responsive website for the Alkalemah Toastmasters Club, showcasing club activities, events, and membership information. Deployed via GitHub Pages.</p>
+                    <div class="project-tech">
+                        <span>HTML5</span>
+                        <span>CSS</span>
+                        <span>Bootstrap</span>
+                        <span>GitHub Pages</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fas fa-tooth"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/BaraaMoallem" target="_blank" rel="noopener" title="GitHub"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Dental Labs Web App</h3>
+                    <p>CS50 final project — a web application that helps dental labs receive and manage orders efficiently. Full-stack application with user authentication and order tracking.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>SQLite3</span>
+                        <span>Bootstrap</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="section section-alt" id="education">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">06.</span> Education
+            </h2>
+            <div class="education-card">
+                <div class="edu-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <div class="edu-content">
+                    <h3>Bachelor of Information Technology</h3>
+                    <h4>Cybersecurity Major</h4>
+                    <p class="edu-school">Arab Open University (AOU)</p>
+                    <div class="edu-details">
+                        <span><i class="fas fa-user-graduate"></i> Fourth Year</span>
+                        <span><i class="fas fa-chart-line"></i> GPA: 2.96 (Last Semester: 4.00)</span>
+                        <span><i class="far fa-calendar-alt"></i> Expected Graduation: 2027</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-number">07.</span> Get in Touch
+            </h2>
+            <div class="contact-content">
+                <p class="contact-intro">
+                    I'm actively seeking <strong>internship and entry-level positions</strong> in cybersecurity — particularly in <strong>SOC Analyst</strong>, <strong>Blue Team</strong>, and <strong>Security Operations</strong> roles. If you have an opportunity or just want to connect, I'd love to hear from you!
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:baraamoallem5@gmail.com" class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>baraamoallem5@gmail.com</p>
+                    </a>
+                    <a href="tel:+201011798671" class="contact-card">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <h3>Phone</h3>
+                        <p>+20 101 179 8671</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/probaroa/" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                        <h3>LinkedIn</h3>
+                        <p>linkedin.com/in/probaroa</p>
+                    </a>
+                    <a href="https://github.com/BaraaMoallem" target="_blank" rel="noopener" class="contact-card">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <h3>GitHub</h3>
+                        <p>github.com/BaraaMoallem</p>
+                    </a>
+                </div>
+                <div class="contact-cta">
+                    <a href="mailto:baraamoallem5@gmail.com" class="btn btn-primary btn-lg">
+                        <i class="fas fa-paper-plane"></i> Send Me a Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <a href="#hero" class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>B<span class="logo-dot">.</span>M<span class="logo-bracket">/&gt;</span>
+                </a>
+                <p class="footer-text">Designed & Built by Baraa Al Moalem</p>
+                <div class="footer-socials">
+                    <a href="https://www.linkedin.com/in/probaroa/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/BaraaMoallem" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="mailto:baraamoallem5@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
